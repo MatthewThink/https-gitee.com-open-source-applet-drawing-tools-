@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/drawing/drawing",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/user/user",
+    "pages/find/find"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "画图工具",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/drawing/drawing",
+        "text": "首页",
+        "iconPath": "image/tabbar/index.png",
+        "selectedIconPath": "image/tabbar/index2.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "image/tabbar/user.png",
+        "selectedIconPath": "image/tabbar/user2.png"
+      }
+    ],
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

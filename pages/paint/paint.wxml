@@ -1,0 +1,32 @@
+<!--pages/paint/paint.wxml-->
+<canvas canvas-id='paint' disable-scroll='true' style='width:750rpx;height:{{offsetY}}' bindtouchstart='start' bindtouchmove='move' bindtouchend='end'></canvas>
+<view class='toolBar'>
+  <block wx:for="{{iconWidths}}" wx:key="" wx:for-index="i">
+      <image class='widths' data-index='{{i}}' mode="center" src='{{item}}' bindtap='chooseWidth'></image>
+  </block>
+  <image class='clean' mode='center' src='../../image/clean.png' bindtap='clean'></image>
+  <image class='eraser' mode='center' src='../../image/eraser.png' bindtap='eraser'></image>
+  <image class='save' mode='center' src='../../image/save.png' bindtap='save'></image>
+</view>
+
+<!--在scrollView中用for循环无法实现横向排列，赞不知原因-->
+ <!-- <scroll-view class='scroll' scroll-x='true' wx:for='{{colors}}' wx:key='' for-index='i'> 
+   <view class='colors' data-index='i' style='background:{{item}}' bindtap='chooseColor'></view>
+ </scroll-view>  -->
+ <scroll-view class='scroll' scroll-x='true'>
+   <view class='colors' data-index='0' style='background:{{colors[0]}}' bindtap='chooseColor'></view>
+   <view class='colors' data-index='1' style='background:{{colors[1]}}' bindtap='chooseColor'></view>
+   <view class='colors' data-index='2' style='background:{{colors[2]}}' bindtap='chooseColor'></view>
+   <view class='colors' data-index='3' style='background:{{colors[3]}}' bindtap='chooseColor'></view>
+   <view class='colors' data-index='4' style='background:{{colors[4]}}' bindtap='chooseColor'></view>
+   <view class='colors' data-index='5' style='background:{{colors[5]}}' bindtap='chooseColor'></view>
+   <view class='colors' data-index='6' style='background:{{colors[6]}}' bindtap='chooseColor'></view>
+   <view class='colors' data-index='7' style='background:{{colors[7]}}' bindtap='chooseColor'></view>
+   <view class='colors' data-index='8' style='background:{{colors[8]}}' bindtap='chooseColor'></view>
+   <view class='colors' data-index='9' style='background:{{colors[9]}}' bindtap='chooseColor'></view>
+   <view class='colors' data-index='10' style='background:{{colors[10]}}' bindtap='chooseColor'></view>
+   <view class='colors' data-index='11' style='background:{{colors[11]}}' bindtap='chooseColor'></view>
+   <view class='colors' data-index='12' style='background:{{colors[12]}}' bindtap='chooseColor'></view>
+   <view class='colors' data-index='13' style='background:{{colors[13]}}' bindtap='chooseColor'></view>
+   <view class='colors' data-index='14' style='background:{{colors[14]}}' bindtap='chooseColor'></view>
+ </scroll-view>

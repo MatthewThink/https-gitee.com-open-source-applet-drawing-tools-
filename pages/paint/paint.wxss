@@ -1,0 +1,33 @@
+/* pages/paint/paint.wxss */
+.toolBar {
+  width:750rpx;
+  height:40px;
+  background:#e8e8e8;
+}
+
+.widths {
+  width: 40px;
+  height:40px;
+  display: block;
+  float: left;
+}
+
+.clean,.eraser,.save {
+  width: 40px;
+  height:40px;
+  display: block;
+  float: right;
+}
+
+.scroll {
+  width: 100%;
+  background:#e8e8e8;
+  white-space: nowrap;
+}
+
+.colors {
+  width: 30px; 
+  height:30px;
+  margin: 5px;
+  display: inline-block; 
+}
